@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="27281" started-at="2021-10-04T14:28:57 EDT" finished-at="2021-10-04T14:29:24 EDT">
+  <suite name="Default suite" duration-ms="42424" started-at="2021-10-05T13:44:22 EDT" finished-at="2021-10-05T13:45:05 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="27281" started-at="2021-10-04T14:28:57 EDT" finished-at="2021-10-04T14:29:24 EDT">
-      <class name="com.vyomlabs.backup.scripts.TC001">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC001@53f65459]" name="LaunchBrowser" is-config="true" duration-ms="11666" started-at="2021-10-04T14:28:57 EDT" finished-at="2021-10-04T14:29:09 EDT">
+    <test name="Default test" duration-ms="42424" started-at="2021-10-05T13:44:22 EDT" finished-at="2021-10-05T13:45:05 EDT">
+      <class name="com.vyomlabs.backup.scripts.TC003">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="LaunchBrowser" is-config="true" duration-ms="11458" started-at="2021-10-05T13:44:22 EDT" finished-at="2021-10-05T13:44:34 EDT">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC001@53f65459]" name="Login" is-config="true" duration-ms="2822" started-at="2021-10-04T14:29:09 EDT" finished-at="2021-10-04T14:29:12 EDT">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="Login" is-config="true" duration-ms="2130" started-at="2021-10-05T13:44:34 EDT" finished-at="2021-10-05T13:44:36 EDT">
           <params>
             <param index="0">
               <value>
@@ -49,26 +49,139 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.vyomlabs.backup.scripts.TC001@53f65459]" name="testLogin" duration-ms="11455" started-at="2021-10-04T14:29:12 EDT" finished-at="2021-10-04T14:29:23 EDT">
+        <test-method status="FAIL" signature="testLogin()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="testLogin" duration-ms="10859" started-at="2021-10-05T13:44:36 EDT" description="verify failed test case for screenshot" finished-at="2021-10-05T13:44:47 EDT">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at com.vyomlabs.backup.scripts.TC003.testLogin(TC003.java:25)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="Logout(org.testng.ITestResult)[pri:0, instance:com.vyomlabs.backup.scripts.TC001@53f65459]" name="Logout" is-config="true" duration-ms="1231" started-at="2021-10-04T14:29:23 EDT" finished-at="2021-10-04T14:29:24 EDT">
+        <test-method status="FAIL" signature="Logout(org.testng.ITestResult)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="Logout" is-config="true" duration-ms="17945" started-at="2021-10-05T13:44:47 EDT" finished-at="2021-10-05T13:45:05 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=SUCCESS method=TC001.testLogin()[pri:0, instance:com.vyomlabs.backup.scripts.TC001@53f65459] output={null}]]]>
+                <![CDATA[[TestResult name=testLogin status=FAILURE method=TC003.testLogin()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate an element using xpath=//a[@title='Log me out']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-B6MQFRDE', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//a[@title='Log me out']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-B6MQFRDE', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:50)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.collect(Unknown Source)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:484)
+at com.vyomlabs.backup.generics.WebactionUtils.jsClick(WebactionUtils.java:41)
+at com.vyomlabs.backup.pages.HomePage.Logout(HomePage.java:53)
+at com.vyomlabs.backup.scripts.BaseTest.Logout(BaseTest.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:661)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method status="PASS" signature="CloseApp()[pri:0, instance:com.vyomlabs.backup.scripts.TC001@53f65459]" name="CloseApp" is-config="true" duration-ms="63" started-at="2021-10-04T14:29:24 EDT" finished-at="2021-10-04T14:29:24 EDT">
+        <test-method status="SKIP" signature="CloseApp()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="CloseApp" is-config="true" duration-ms="-1633455905016" started-at="2021-10-05T13:45:05 EDT" finished-at="1969-12-31T19:00:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-      </class> <!-- com.vyomlabs.backup.scripts.TC001 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.vyomlabs.backup.scripts.TC003 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

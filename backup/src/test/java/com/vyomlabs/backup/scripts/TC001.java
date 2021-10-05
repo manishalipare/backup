@@ -9,9 +9,7 @@ import com.vyomlabs.backup.pages.ProductDetailPage;
 import com.vyomlabs.backup.pages.orderDetailedPage;
 
 @Test()
-public class TC001  extends BaseTest{
-
-	
+public class TC001  extends BaseTest{	
 	
 	public void testLogin()
 	{
