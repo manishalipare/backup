@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42424" started-at="2021-10-05T13:44:22 EDT" finished-at="2021-10-05T13:45:05 EDT">
+  <suite name="Default suite" duration-ms="30765" started-at="2021-10-05T15:12:20 EDT" finished-at="2021-10-05T15:12:51 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="42424" started-at="2021-10-05T13:44:22 EDT" finished-at="2021-10-05T13:45:05 EDT">
+    <test name="Default test" duration-ms="30765" started-at="2021-10-05T15:12:20 EDT" finished-at="2021-10-05T15:12:51 EDT">
       <class name="com.vyomlabs.backup.scripts.TC003">
-        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="LaunchBrowser" is-config="true" duration-ms="11458" started-at="2021-10-05T13:44:22 EDT" finished-at="2021-10-05T13:44:34 EDT">
+        <test-method status="PASS" signature="LaunchBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="LaunchBrowser" is-config="true" duration-ms="11589" started-at="2021-10-05T15:12:20 EDT" finished-at="2021-10-05T15:12:32 EDT">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="Login" is-config="true" duration-ms="2130" started-at="2021-10-05T13:44:34 EDT" finished-at="2021-10-05T13:44:36 EDT">
+        <test-method status="PASS" signature="Login(java.lang.String, java.lang.String)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="Login" is-config="true" duration-ms="1403" started-at="2021-10-05T15:12:32 EDT" finished-at="2021-10-05T15:12:33 EDT">
           <params>
             <param index="0">
               <value>
@@ -49,7 +49,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="testLogin()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="testLogin" duration-ms="10859" started-at="2021-10-05T13:44:36 EDT" description="verify failed test case for screenshot" finished-at="2021-10-05T13:44:47 EDT">
+        <test-method status="FAIL" signature="testScreenshot()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="testScreenshot" duration-ms="12073" started-at="2021-10-05T15:12:33 EDT" description="verify failed test case for screenshot" finished-at="2021-10-05T15:12:45 EDT">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -62,7 +62,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:819)
 at org.testng.Assert.assertEquals(Assert.java:829)
-at com.vyomlabs.backup.scripts.TC003.testLogin(TC003.java:25)
+at com.vyomlabs.backup.scripts.TC003.testScreenshot(TC003.java:25)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -96,12 +96,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="FAIL" signature="Logout(org.testng.ITestResult)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="Logout" is-config="true" duration-ms="17945" started-at="2021-10-05T13:44:47 EDT" finished-at="2021-10-05T13:45:05 EDT">
+        </test-method> <!-- testScreenshot -->
+        <test-method status="FAIL" signature="Logout(org.testng.ITestResult)[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="Logout" is-config="true" duration-ms="5636" started-at="2021-10-05T15:12:45 EDT" finished-at="2021-10-05T15:12:51 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLogin status=FAILURE method=TC003.testLogin()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae] output={null}]]]>
+                <![CDATA[[TestResult name=testScreenshot status=FAILURE method=TC003.testScreenshot()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae] output={null}]]]>
               </value>
             </param>
           </params>
@@ -177,7 +177,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logout -->
-        <test-method status="SKIP" signature="CloseApp()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="CloseApp" is-config="true" duration-ms="-1633455905016" started-at="2021-10-05T13:45:05 EDT" finished-at="1969-12-31T19:00:00 EST">
+        <test-method status="SKIP" signature="CloseApp()[pri:0, instance:com.vyomlabs.backup.scripts.TC003@2d6eabae]" name="CloseApp" is-config="true" duration-ms="-1633461171418" started-at="2021-10-05T15:12:51 EDT" finished-at="1969-12-31T19:00:00 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseApp -->
