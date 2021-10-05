@@ -16,7 +16,7 @@ public class TC004 extends BaseTest{
 		MyStorePage mp = hp.clickOnTab("dresses");
 	    ProductDetailPage PDP=mp.ClickOnProduct("5");
 		PDP.increaseQuantity(2);
-		PDP.selectSize("M");  
+		PDP.selectSize("L");  //Fixed it for size large
 		PDP.selectColor("Yellow");
 		PDP.addToKart();
 		orderDetailedPage ODP = PDP.proceedToCheckout();
