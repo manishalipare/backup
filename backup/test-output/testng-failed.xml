@@ -6,8 +6,8 @@
       <class name="com.vyomlabs.backup.scripts.TC003">
         <methods>
           <include name="Login"/>
+          <include name="testScreenshot"/>
           <include name="LaunchBrowser"/>
-          <include name="testLogin"/>
           <include name="CloseApp"/>
           <include name="Logout"/>
         </methods>

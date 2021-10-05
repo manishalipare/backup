@@ -12,7 +12,7 @@ public class TC003 extends BaseTest{
 
 	
 @Test(description="verify failed test case for screenshot")
-	public void testLogin()
+	public void testScreenshot()
 		{
 			HomePage hp = new HomePage(driver, actionUtils);
 			MyStorePage mp = hp.clickOnTab("dresses");
